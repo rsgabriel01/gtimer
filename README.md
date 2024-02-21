@@ -1,4 +1,4 @@
-# POMO TIMER
+# G TIMER
 
 # React + TypeScript + Vite
 
