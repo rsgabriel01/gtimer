@@ -18,45 +18,45 @@ export function History() {
 
           <tbody>
             <tr>
-              <td>Tarefa 1</td>
-              <td>20 minutos</td>
-              <td>Há 2 meses</td>
+              <td>Tarefa #5642</td>
+              <td>30 minutos</td>
+              <td>Há uma hora</td>
               <td>
                 <Status statusColor="yellow">Em andamento</Status>
               </td>
             </tr>
 
             <tr>
-              <td>Tarefa 1</td>
-              <td>20 minutos</td>
-              <td>Há 2 meses</td>
+              <td>Tarefa #5641</td>
+              <td>30 minutos</td>
+              <td>Há 2 horas</td>
               <td>
                 <Status statusColor="green">Concluído</Status>
               </td>
             </tr>
 
             <tr>
-              <td>Tarefa 1</td>
+              <td>Tarefa #5641</td>
               <td>20 minutos</td>
-              <td>Há 2 meses</td>
+              <td>Há 3 horas</td>
               <td>
                 <Status statusColor="green">Concluído</Status>
               </td>
             </tr>
 
             <tr>
-              <td>Tarefa 1</td>
-              <td>20 minutos</td>
-              <td>Há 2 meses</td>
+              <td>Tarefa #5641</td>
+              <td>45 minutos</td>
+              <td>Há um dia</td>
               <td>
                 <Status statusColor="red">Interrompido</Status>
               </td>
             </tr>
 
             <tr>
-              <td>Tarefa 1</td>
-              <td>20 minutos</td>
-              <td>Há 2 meses</td>
+              <td>Tarefa #5641</td>
+              <td>35 minutos</td>
+              <td>Há um dia</td>
               <td>
                 <Status statusColor="red">Interrompido</Status>
               </td>
