@@ -1,3 +1,4 @@
+import { useForm } from 'react-hook-form'
 import { PiPlay } from 'react-icons/pi'
 
 import {
@@ -11,21 +12,31 @@ import {
 } from './styles'
 
 export function Home() {
+  const { register, handleSubmit, watch } = useForm()
+
+  function handleCreateNewCycle(data: any) {
+    console.log(data)
+  }
+
+  const task = watch('task')
+  const isSubmitDisabled = !task
+
   return (
     <HomeContainer>
-      <form>
+      <form onSubmit={handleSubmit(handleCreateNewCycle)}>
         <FormContainer>
           <label htmlFor="task">Vou trabalhar em</label>
           <TaskInput
             id="task"
             list="task-suggestion"
             placeholder="Dê um nome para o seu projeto"
+            {...register('task')}
           />
           <datalist id="task-suggestion">
-            <option value="sdad" />
-            <option value="dasdas" />
-            <option value="sdafdsfsadfd" />
-            <option value="sdghg" />
+            <option value="Tarefa 1" />
+            <option value="Tarefa 2" />
+            <option value="Tarefa 3" />
+            <option value="Tarefa 4" />
           </datalist>
 
           <label htmlFor="minutesAmount">durante</label>
@@ -36,6 +47,7 @@ export function Home() {
             step={5}
             min={5}
             max={60}
+            {...register('minutesAmount', { valueAsNumber: true })}
           />
 
           <span>minutos.</span>
@@ -49,7 +61,7 @@ export function Home() {
           <span>0</span>
         </CountdownContainer>
 
-        <StartCountdownButton type="submit">
+        <StartCountdownButton disabled={isSubmitDisabled} type="submit">
           <PiPlay size={24} />
           Começar
         </StartCountdownButton>
