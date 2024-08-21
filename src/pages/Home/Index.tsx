@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form'
 import { PiPlay } from 'react-icons/pi'
 import * as zod from 'zod'
 
+import { useState } from 'react'
 import {
   CountdownContainer,
   FormContainer,
@@ -23,7 +24,16 @@ const newCicleFormValidationSchema = zod.object({
 
 type NewCycleFormData = zod.infer<typeof newCicleFormValidationSchema>
 
+interface Cycle {
+  id: string
+  task: string
+  minutesAmount: number
+}
+
 export function Home() {
+  const [cycles, setCicles] = useState<Cycle[]>([])
+  const [activeCycleId, setActiveCycleId] = useState<string | null>(null)
+
   const { register, handleSubmit, watch, reset } = useForm<NewCycleFormData>({
     resolver: zodResolver(newCicleFormValidationSchema),
     defaultValues: {
@@ -33,9 +43,23 @@ export function Home() {
   })
 
   function handleCreateNewCycle(data: NewCycleFormData) {
-    console.log(data)
+    const idByGetTime = String(new Date().getTime())
+
+    const newCycle: Cycle = {
+      id: idByGetTime,
+      task: data.task,
+      minutesAmount: data.minutesAmount
+    }
+
+    setCicles((state) => [...cycles, newCycle])
+    setActiveCycleId(idByGetTime)
+
     reset()
   }
+
+  const activeCycle = cycles.find((cycle) => cycle.id === activeCycleId)
+
+  console.log(activeCycle)
 
   const task = watch('task')
   const isSubmitDisabled = !task
