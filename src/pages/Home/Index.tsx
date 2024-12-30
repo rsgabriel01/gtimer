@@ -38,6 +38,11 @@ export function Home() {
 
   function handleCreateNewCycle(data: NewCycleFormData) {
     createNewCycle(data)
+    // reset()
+  }
+
+  function handleInterruptCurrentCycle() {
+    interruptCurrentCycle()
     reset()
   }
 
@@ -53,7 +58,10 @@ export function Home() {
         <Countdown />
 
         {activeCycle ? (
-          <StopCountdownButton type="button" onClick={interruptCurrentCycle}>
+          <StopCountdownButton
+            type="button"
+            onClick={handleInterruptCurrentCycle}
+          >
             <PiHandPalm size={24} />
             Interromper
           </StopCountdownButton>

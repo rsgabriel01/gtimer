@@ -1,11 +1,22 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { useFormContext } from 'react-hook-form'
 import { CyclesContext } from '../../../../contexts/CyclesContext'
 import { FormContainer, MinutesAmountInput, TaskInput } from './styles'
 
 export function NewCycleForm() {
   const { activeCycle } = useContext(CyclesContext)
-  const { register } = useFormContext()
+  const { register, setValue } = useFormContext()
+
+  useEffect(() => {
+    if (activeCycle) {
+      setValue('task', activeCycle.task)
+
+      setValue('minutesAmount', activeCycle.minutesAmount)
+    } else {
+      setValue('task', '')
+      setValue('minutesAmount', '')
+    }
+  }, [activeCycle, setValue])
 
   return (
     <FormContainer>
