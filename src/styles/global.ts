@@ -1,6 +1,22 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
+  ::-webkit-scrollbar {
+    width: 0.625rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: ${(props) => props.theme['gray-900']};
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: ${(props) => props.theme['gray-400']};
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: ${(props) => props.theme['gray-500']};
+  }
+
   * {
     margin: 0;
     padding: 0;

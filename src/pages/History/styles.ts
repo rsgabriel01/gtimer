@@ -11,6 +11,16 @@ export const HistoryContainer = styled.main`
     font-size: 1.5rem;
     color: ${(props) => props.theme['gray-100']};
   }
+
+  overflow: auto;
+
+  ::-webkit-scrollbar-track {
+    background: ${(props) => props.theme['gray-800']};
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
 `
 
 export const HistoryList = styled.div`
