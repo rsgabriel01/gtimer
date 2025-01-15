@@ -8,7 +8,7 @@ Project for chapter 2 of the Ignite-Rocketseat certification fundamentals module
   <a href="#-tecnologias">Tecnologys</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licence</a>
+  <a href="#memo-licença">License</a>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@ Project for chapter 2 of the Ignite-Rocketseat certification fundamentals module
   <img alt="gtimer" src=".github/gtimer-readme-image.png" width="100%">
 </p>
 
-## 🚀 Tecnologias
+## 🚀 Tecnologys
 
 This project was developed with the following technologies:
 
@@ -31,7 +31,7 @@ This project was developed with the following technologies:
 - [Styled Components](https://styled-components.com/)
 - [React Router](https://reactrouter.com/)
 
-## 💻 Projeto
+## 💻 Project
 
 Gtimer is a web page for using the pomodoro technique with control of activities carried out.
 
@@ -39,7 +39,7 @@ Gtimer is a web page for using the pomodoro technique with control of activities
 
 You can view the project layout through [THIS LINK](<https://www.figma.com/design/kByLuZygTc0OwWBq5Hfoq6/Ignite-Timer-(My)?node-id=11-599&t=nBKecR9vBW5zwWbv-0/duplicate>). You must have a [Figma](https://figma.com) account to access it.
 
-## :memo: Licença
+## :memo: License
 
 This project is under the MIT license.
 
