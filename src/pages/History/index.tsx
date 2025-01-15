@@ -1,10 +1,20 @@
 import { formatDistanceToNow } from 'date-fns'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { CyclesContext } from '../../contexts/CyclesContext'
 import { HistoryContainer, HistoryList, Status } from './styles'
 
 export function History() {
   const { cycles } = useContext(CyclesContext)
+  const gTimerText = 'G-timer'
+
+  useEffect(() => {
+    const isTitlePageWithTimer = document.title === gTimerText ? false : true
+
+    if (isTitlePageWithTimer) {
+      document.title = 'G-timer'
+    }
+  }, [])
+
   return (
     <HistoryContainer>
       <h1>Meu histórico</h1>
