@@ -1,14 +1,14 @@
 <h1 align="center"> Gtimer </h1>
 
 <p align="center">
-Projeto do cápitulo 2 do modulo Fundamentos da certificação Ignite-Rocketseat.
+Project for chapter 2 of the Ignite-Rocketseat certification fundamentals module.
 </p>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologys</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#memo-licença">Licence</a>
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@ Projeto do cápitulo 2 do modulo Fundamentos da certificação Ignite-Rocketseat
 
 ## 🚀 Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with the following technologies:
 
 - [ReactJS](https://https://react.dev/)
 - [Typescript](https://www.typescriptlang.org/)
@@ -33,16 +33,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Gtimer é uma página web para uso da técnica pomodoro com controle de atividades realizadas.
+Gtimer is a web page for using the pomodoro technique with control of activities carried out.
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/kByLuZygTc0OwWBq5Hfoq6/Ignite-Timer-(My)?node-id=11-599&t=nBKecR9vBW5zwWbv-0/duplicate). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+You can view the project layout through [THIS LINK](<https://www.figma.com/design/kByLuZygTc0OwWBq5Hfoq6/Ignite-Timer-(My)?node-id=11-599&t=nBKecR9vBW5zwWbv-0/duplicate>). You must have a [Figma](https://figma.com) account to access it.
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT.
+This project is under the MIT license.
 
 ---
 
-Feito com ♥ por mim junto com a Rocketseat
+Made with ♥ by me together with Rocketseat
