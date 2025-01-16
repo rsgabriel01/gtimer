@@ -16,6 +16,10 @@ export const HeaderContainer = styled.header`
       color: ${(props) => props.theme['green-500']};
       cursor: pointer;
     }
+
+    &:active {
+      color: ${(props) => props.theme['green-300']};
+    }
   }
 
   nav {
@@ -30,7 +34,7 @@ export const HeaderContainer = styled.header`
       justify-content: center;
       align-items: center;
 
-      color: ${(props) => props.theme['gray-100']};
+      color: ${(props) => props.theme['color-text-default']};
 
       border-top: 3px solid transparent;
       border-bottom: 3px solid transparent;

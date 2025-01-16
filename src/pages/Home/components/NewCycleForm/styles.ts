@@ -8,7 +8,7 @@ export const FormContainer = styled.div`
   justify-content: center;
   gap: 0.5rem;
 
-  color: ${(props) => props.theme['gray-100']};
+  color: ${(props) => props.theme['color-text-default']};
   font-size: 1.125rem;
   font-weight: bold;
   flex-wrap: wrap;
@@ -22,7 +22,7 @@ const BaseInput = styled.input`
   font-weight: bold;
   font-size: 1.125rem;
   padding: 0 0.5rem;
-  color: ${(props) => props.theme['gray-100']};
+  color: ${(props) => props.theme['color-text-default']};
 
   &:focus {
     box-shadow: none;

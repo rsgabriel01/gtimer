@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    background: ${(props) => props.theme['gray-900']};
+    background: ${(props) => props.theme['bg-app']};
   }
 
   ::-webkit-scrollbar-thumb {
@@ -29,8 +29,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme['gray-900']};
-    color: ${(props) => props.theme['gray-300']};
+    background: ${(props) => props.theme['bg-app']};
+    color: ${(props) => props.theme['color-text-default']};
     -webkit-font-smoothing: antialiased;
   }
   
