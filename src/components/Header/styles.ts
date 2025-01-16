@@ -5,6 +5,19 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
 
+  .logoAndTheme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+  .theme {
+    &:hover {
+      color: ${(props) => props.theme['green-500']};
+      cursor: pointer;
+    }
+  }
+
   nav {
     display: flex;
     gap: 0.5rem;
