@@ -1,6 +1,8 @@
 import { colors } from './colors'
 
-export const whiteTheme = {
+export const lightTheme = {
+  type: 'light',
+
   white: colors['white'],
 
   'gray-100': colors['green-primary-100'],

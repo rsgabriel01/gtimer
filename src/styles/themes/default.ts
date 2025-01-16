@@ -1,6 +1,8 @@
 import { colors } from './colors'
 
 export const defaultTheme = {
+  type: 'default',
+
   white: colors['white'],
 
   'gray-100': colors['gray-primary-100'],

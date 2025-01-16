@@ -1,17 +1,25 @@
 import { HeaderContainer } from './styles'
 
-import { PiScroll, PiSun, PiTimer } from 'react-icons/pi'
+import { useTheme } from 'styled-components'
+
+import { PiMoon, PiScroll, PiSun, PiTimer } from 'react-icons/pi'
 import { NavLink } from 'react-router-dom'
 import logoIgnite from '../../assets/logo-ignite.svg'
 
 export function Header() {
+  const theme = useTheme()
+  console.log(theme['type'])
+
   return (
     <HeaderContainer>
       <div className="logoAndTheme">
         <img src={logoIgnite} alt="" />
         <div className="theme">
-          <PiSun size={24} />
-          {/* <PiMoon size={24} /> */}
+          {theme['type'] === 'light' ? (
+            <PiMoon size={24} />
+          ) : (
+            <PiSun size={24} />
+          )}
         </div>
       </div>
 
