@@ -47,5 +47,7 @@ export const TaskInput = styled(BaseInput)`
 `
 
 export const MinutesAmountInput = styled(BaseInput)`
-  width: 4rem;
+  width: 3.65rem;
+  text-align: right;
+  padding: 0 0.4375rem 0 0;
 `
