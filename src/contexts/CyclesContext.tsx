@@ -27,15 +27,18 @@ interface CycleContextType {
   setSecondsPassed: (seconds: number) => void
   createNewCycle: (data: CreateCycleData) => void
   interruptCurrentCycle: () => void
+  handleToggleThemeContext: () => void
 }
 
 export const CyclesContext = createContext({} as CycleContextType)
 
 interface CyclesContextProviderProps {
+  handleToggleTheme(): void
   children: ReactNode
 }
 
 export function CyclesContextProvider({
+  handleToggleTheme,
   children
 }: CyclesContextProviderProps) {
   const [cyclesState, dispatchCyclesState] = useReducer(
@@ -100,6 +103,10 @@ export function CyclesContextProvider({
     dispatchCyclesState(interruptCurrentCycleAction())
   }
 
+  function handleToggleThemeContext() {
+    handleToggleTheme()
+  }
+
   return (
     <CyclesContext.Provider
       value={{
@@ -110,7 +117,8 @@ export function CyclesContextProvider({
         amountSecondsPassed,
         setSecondsPassed,
         createNewCycle,
-        interruptCurrentCycle
+        interruptCurrentCycle,
+        handleToggleThemeContext
       }}
     >
       {children}

@@ -1,7 +1,7 @@
 import { colors } from './colors'
 
 export const lightTheme = {
-  type: 'light',
+  title: 'light',
 
   white: colors['white'],
 

@@ -1,7 +1,7 @@
 import { colors } from './colors'
 
-export const defaultTheme = {
-  type: 'default',
+export const darkTheme = {
+  title: 'dark',
 
   white: colors['white'],
 

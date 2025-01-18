@@ -2,23 +2,25 @@ import { HeaderContainer } from './styles'
 
 import { useTheme } from 'styled-components'
 
+import { useContext } from 'react'
 import { PiMoon, PiScroll, PiSun, PiTimer } from 'react-icons/pi'
 import { NavLink } from 'react-router-dom'
 import logoIgnite from '../../assets/logo-ignite.svg'
+import { CyclesContext } from '../../contexts/CyclesContext'
 
 export function Header() {
   const theme = useTheme()
-  console.log(theme['type'])
+  const { handleToggleThemeContext } = useContext(CyclesContext)
 
   return (
     <HeaderContainer>
       <div className="logoAndTheme">
         <img src={logoIgnite} alt="" />
         <div className="theme">
-          {theme['type'] === 'light' ? (
-            <PiMoon size={24} />
+          {theme['title'] === 'light' ? (
+            <PiMoon size={24} onClick={handleToggleThemeContext} />
           ) : (
-            <PiSun size={24} />
+            <PiSun size={24} onClick={handleToggleThemeContext} />
           )}
         </div>
       </div>

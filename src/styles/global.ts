@@ -32,8 +32,6 @@ export const GlobalStyle = createGlobalStyle`
     background: ${(props) => props.theme['bg-app']};
     color: ${(props) => props.theme['color-text-default']};
     -webkit-font-smoothing: antialiased;
-
-    transition: all 0.25s linear;
   }
   
   body, input, textarea, button {
